@@ -1,0 +1,36 @@
+@import "tailwindcss";
+
+/* Màu chủ đạo: chỉ cần sửa ở đây */
+:root {
+  --primary: #b20707;
+  --primary-dark: #8a0505; /* hover */
+  --primary-soft: #fbe9e9; /* nền nhạt */
+}
+
+@theme {
+  /* Chữ: đen ấm thay vì đen lạnh */
+  --color-ink: #1c1213;
+  --color-body: #3d3132;
+  --color-muted: #7a6a6b;
+  /* Nền và viền: trắng kem, hồng nhạt */
+  --color-line: #f1dfdb;
+  --color-paper: #fdf4f0;
+}
+
+@theme inline {
+  --color-primary: var(--primary);
+  --color-primary-dark: var(--primary-dark);
+  --color-primary-soft: var(--primary-soft);
+  --font-sans: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
+  --font-script: var(--font-dancing), cursive;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 6rem;
+}
+
+body {
+  background: #fffaf8;
+  color: var(--color-body);
+}
