@@ -10,7 +10,7 @@ import { formatDate } from "@/lib/post-source";
 export function Posts() {
   return (
     <section id="kinh-nghiem" className="mx-auto max-w-6xl px-4 pb-20">
-      <SectionHeading title="Kinh nghiệm mình rút ra" sub="Viết từ nhật ký thật của mình, mốc nào cũng có video." />
+      <SectionHeading title="Kinh nghiệm mình rút ra" />
       <div className="mt-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
         {posts.map((p) => (
           <Link

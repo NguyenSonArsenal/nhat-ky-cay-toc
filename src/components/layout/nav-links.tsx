@@ -59,7 +59,7 @@ export function NavLinks({ className = "" }: { className?: string }) {
           href={href}
           aria-current={active === id ? (isHome ? "location" : "page") : undefined}
           className={`shrink-0 rounded-md px-3 py-1.5 transition-colors hover:text-primary ${
-            active === id ? "bg-primary-soft font-semibold text-primary" : "text-body"
+            active === id ? "font-semibold text-primary" : "text-body"
           }`}
         >
           {label}

@@ -5,6 +5,8 @@ import Link from "next/link";
 import { Logo } from "@/components/layout/header";
 import { site, zaloUrl } from "@/config/site";
 
+const isExternal = (href: string) => href.startsWith("http");
+
 const columns = [
   {
     title: "Hành trình",
@@ -22,11 +24,12 @@ const columns = [
     ],
   },
   {
-    title: "Ưu đãi",
+    title: "Liên hệ",
     links: [
-      { href: "/#uu-dai", label: `Mã giảm ${site.discount}` },
-      { href: "/#lien-he", label: "Liên hệ" },
-    ],
+      { href: zaloUrl, label: "Nhắn Zalo" },
+      { href: site.facebook, label: "Facebook" },
+      { href: site.tiktok, label: "TikTok" },
+    ].filter((l) => l.href),
   },
 ];
 
@@ -64,7 +67,11 @@ export function Footer() {
             <ul className="space-y-2 text-sm">
               {col.links.map((l) => (
                 <li key={l.href}>
-                  <Link href={l.href} className="hover:text-primary">
+                  <Link
+                    href={l.href}
+                    {...(isExternal(l.href) && { target: "_blank", rel: "noopener noreferrer" })}
+                    className="hover:text-primary"
+                  >
                     {l.label}
                   </Link>
                 </li>
@@ -81,8 +88,8 @@ export function Footer() {
         </p>
         <p>
           <strong className="text-ink">Lưu ý:</strong> Trang này là trải nghiệm của riêng mình, không thay thế tư vấn
-          của bác sĩ. Tóc mỗi người mỗi khác. Anh em dùng mã giảm giá trên trang thì mình có nhận hoa hồng giới thiệu
-          từ phòng khám.
+          của bác sĩ. Tóc và chất tóc mỗi người sẽ khác nhau, nên sẽ có
+          những câu chuyện khác nhau.
         </p>
       </div>
     </footer>

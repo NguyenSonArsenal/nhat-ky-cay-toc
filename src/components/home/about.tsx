@@ -1,4 +1,3 @@
-import { faTiktok } from "@fortawesome/free-brands-svg-icons";
 import { faChevronRight } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Image from "next/image";
@@ -22,39 +21,30 @@ export function About() {
         </div>
         <div>
           <h2 className="text-2xl font-bold text-ink md:text-3xl">
-            Mình là ai mà <span className="text-primary">viết trang này?</span>
+            Chào mọi người, mình là {site.author} đi cấy tóc đây
           </h2>
-          <p className="mt-2 font-semibold text-ink">Người thật, tóc thật, chuyện thật.</p>
           <div className="mt-5 space-y-4 text-sm leading-relaxed">
             <p>
-              Mình là {site.author}, một người bình thường như bao anh em khác. Với mình cấy tóc là một khoản không
-              nhỏ: tính ra mỗi nang tóc khoảng 27 nghìn, nên mấy hôm đầu gội đầu cũng phải nhẹ tay, rớt sợi nào là
-              tiếc sợi đó.
+              Mình là một người bị hói chữ M, hói khá nặng, gần chục năm trời. Đi đâu ra đường mình cũng tự ti lắm, lúc
+              nào cũng phải có mũ bên mình. Một hôm lướt TikTok, mình biết đến cấy tóc tự thân: dùng tóc phía sau gáy
+              của chính mình để cấy lên vùng rụng phía trước. Sau rất nhiều đắn đo, trăn trở và đi làm tiết kiệm tiền,
+              ngày {site.surgeryDate} mình quyết định đi cấy tóc tự thân.
             </p>
             <p>
-              Sau cấy mình vẫn đi làm, vẫn ở phòng trọ, trời đổ mưa thì vẫn lao ra chạy lúa cùng mọi người. Mới cấy
-              chưa được đội mũ bảo hiểm thì mình đi xe bus cho tiết kiệm, chứ đi taxi thì xót tiền lắm.
+              Với mình cấy tóc là một khoản không nhỏ. Tính ra mỗi nang tầm 27 nghìn, nên mấy ngày đầu gội đầu cũng phải
+              nhẹ tay. Chưa được đội mũ bảo hiểm thì mình đi xe bus thay taxi cho tiết kiệm. Mình vẫn ở trọ, vẫn đi làm,
+              trời đổ mưa thì vẫn lao ra chạy lúa cùng mọi người.
             </p>
             <p>
-              Giai đoạn rụng sốc, tóc rụng trắng hai bên, có hôm chẳng dám ra đường. Nhưng cuộc sống không cho dừng
-              lại, nên mình vẫn đi làm và quay video đều, đến giờ được hơn {site.tiktokVideos} video.
+              Sau khi cấy, ngày nào mình cũng đi xem review của người khác, mà để xem được trọn một hành trình từ đầu đến
+              cuối thì rất khó. Nên mình gom hết nhật ký của mình về một chỗ: có ảnh, có video từng mốc, cả lúc ổn lẫn
+              lúc thảm, để anh em tự xem và tự quyết.
             </p>
-            <p>
-              Mình không phải bác sĩ. Đây chỉ là trải nghiệm của một người bình thường, để anh em có thêm góc nhìn thật
-              trước khi bỏ tiền.
-            </p>
+            <p>Anh em đang lăn tăn chuyện tóc thì cứ nhắn mình. Chưa cấy cũng được, hỏi thôi cũng được.</p>
           </div>
-          <p className="mt-6 font-script text-3xl text-primary">{site.nickname}</p>
-          <p className="text-sm font-semibold text-ink">
-            Cấy tóc ngày {site.surgeryDate} ·{" "}
-            <a href={site.tiktok} target="_blank" rel="noopener noreferrer" className="hover:underline">
-              <FontAwesomeIcon icon={faTiktok} className="mr-1" />
-              {site.tiktokHandle}
-            </a>
-          </p>
           <Link
             href="/ve-minh"
-            className="mt-5 inline-flex items-center gap-1.5 text-sm font-semibold text-primary hover:underline"
+            className="mt-6 inline-flex items-center gap-1.5 text-sm font-semibold text-primary hover:underline"
           >
             Đọc thêm về mình <FontAwesomeIcon icon={faChevronRight} className="text-[10px]" />
           </Link>

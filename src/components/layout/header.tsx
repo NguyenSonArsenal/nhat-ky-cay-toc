@@ -10,7 +10,7 @@ export function Logo() {
       <span className="grid h-10 w-10 place-items-center rounded-full bg-primary text-sm font-extrabold text-white">NK</span>
       <span className="leading-tight">
         <span className="block font-bold text-ink">{site.name}</span>
-        <span className="block text-[11px] text-muted">Kể thật, từng ngày một</span>
+        <span className="block text-[11px] text-muted">Chia sẻ chân thành</span>
       </span>
     </Link>
   );
@@ -37,12 +37,6 @@ export function Header() {
             </span>
             <span className="hidden sm:inline">Kết nối Facebook</span>
           </a>
-          <Link
-            href="/#uu-dai"
-            className="hidden rounded-lg bg-primary px-4 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-primary-dark sm:inline-flex"
-          >
-            Nhận mã ưu đãi
-          </Link>
         </div>
       </div>
       <NavLinks className="flex gap-1 overflow-x-auto px-2.5 pb-2 text-sm font-medium lg:hidden" />

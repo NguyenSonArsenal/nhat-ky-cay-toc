@@ -17,11 +17,11 @@ export function Hero() {
             Đang ở tháng thứ {site.currentMonth} sau cấy
           </p>
           <h1 className="text-4xl font-extrabold leading-tight tracking-tight text-ink md:text-5xl">
-            Nhật ký cấy tóc thật của mình, <span className="text-primary">kể từng ngày một</span>
+            Hành trình cấy tóc <span className="text-primary">của {site.author}</span>
           </h1>
           <p className="mt-5 text-lg font-medium text-ink md:text-xl">
-            Không phải phòng khám, cũng chẳng phải người nổi tiếng. Mình là {site.author}, cấy tóc ngày{" "}
-            {site.surgeryDate} và quay video từ đó đến giờ.
+            Dành cho những ai quan tâm đến kỹ thuật cấy tóc, mong muốn có lại mái tóc trên đầu để trông trẻ hơn, tự
+            tin hơn, và không bị cái mác đi đâu cũng phải đội nón.
           </p>
           <p className="mt-4 max-w-xl text-sm leading-relaxed">
             Tóc rụng trắng hai bên, có hôm chẳng dám ra đường, rồi tóc con mọc lại. Có gì mình kể nấy, anh em xem rồi

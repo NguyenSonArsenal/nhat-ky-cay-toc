@@ -1,7 +1,7 @@
 // Thông tin chung của site. Ô nào để trống ("" hoặc null) sẽ hiện "Đang cập nhật".
 export const site = {
   name: "Nhật Ký Cấy Tóc",
-  tagline: "Nhật ký cấy tóc thật của một người bình thường",
+  tagline: "Nhật ký cấy tóc của một người làm công ăn lương",
   author: "Sơn",
   nickname: "Sơn Arsenal",
   surgeryDate: "27/04/2026",
@@ -9,6 +9,7 @@ export const site = {
   nextUpdate: "27/10/2026",
 
   clinic: "Phòng khám bác sĩ Duy Thành",
+  doctor: "Bác sĩ Duy Thành",
   discount: "3 triệu",
   tiktok: "https://www.tiktok.com/@nguyensonarsenal",
   tiktokHandle: "@nguyensonarsenal",
@@ -17,7 +18,7 @@ export const site = {
   zaloPhone: "0964047698",
 
   // TODO: điền khi có thông tin
-  grafts: null as number | null,
+  grafts: 2450,
   referralCode: "", // để trống: khách nhắn tin để nhận mã
   youtube: "",
 };

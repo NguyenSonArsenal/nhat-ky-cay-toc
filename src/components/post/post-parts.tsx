@@ -133,12 +133,14 @@ export function RelatedSidebar({ posts }: { posts: PostMeta[] }) {
           Mã giảm <span className="text-primary">{site.discount}</span>
         </p>
         <p className="mt-1 text-sm">Cấy ở {site.clinic} thì nhắn mình lấy mã.</p>
-        <Link
-          href="/#uu-dai"
+        <a
+          href={contactUrl}
+          target="_blank"
+          rel="noopener noreferrer"
           className="mt-4 inline-flex rounded-lg bg-primary px-4 py-2.5 text-sm font-semibold text-white hover:bg-primary-dark"
         >
           Nhận mã ưu đãi
-        </Link>
+        </a>
       </div>
     </div>
   );

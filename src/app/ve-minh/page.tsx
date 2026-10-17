@@ -89,10 +89,6 @@ export default function AboutPage() {
               đến cuối thì rất khó. Nên mình gom hết nhật ký của mình về một chỗ: có ảnh, có video từng mốc, cả lúc ổn
               lẫn lúc thảm, để anh em tự xem và tự quyết.
             </p>
-            <p>
-              Mình có mã giảm {site.discount} tại {site.clinic}, nơi mình đã cấy, và có nhận hoa hồng khi anh em dùng
-              mã. Mình nói rõ để anh em yên tâm: mọi thứ trên trang này là chuyện thật của mình, không tô vẽ.
-            </p>
             <p>Anh em đang lăn tăn chuyện tóc thì cứ nhắn mình. Chưa cấy cũng được, hỏi thôi cũng được.</p>
           </div>
 

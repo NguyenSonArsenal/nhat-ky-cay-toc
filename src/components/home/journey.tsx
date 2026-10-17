@@ -8,11 +8,8 @@ import { milestones } from "@/content/milestones";
 
 const stats = [
   { label: "Ngày cấy", value: site.surgeryDate },
-  site.grafts
-    ? { label: "Số nang", value: `${site.grafts.toLocaleString("vi-VN")} nang` }
-    : { label: "Video TikTok", value: `${site.tiktokVideos}+ video` },
-  { label: "Phòng khám", value: site.clinic || PENDING },
-  { label: "Mốc tiếp theo", value: `Tháng ${site.currentMonth} · ${site.nextUpdate}` },
+  { label: "Số lượng nang tóc", value: `${site.grafts.toLocaleString("vi-VN")} nang` },
+  { label: "Phòng khám", value: site.doctor || PENDING },
 ];
 
 export function Journey() {
@@ -22,11 +19,11 @@ export function Journey() {
         title="Tóc mình qua từng mốc"
         sub={`Ảnh cắt từ video TikTok của mình. Đang ở tháng thứ ${site.currentMonth}, mốc tiếp theo cập nhật ngày ${site.nextUpdate}.`}
       />
-      <dl className="mt-8 grid grid-cols-2 gap-3 md:grid-cols-4">
+      <dl className="mt-8 grid gap-3 sm:grid-cols-3">
         {stats.map((s) => (
-          <div key={s.label} className="rounded-xl border border-line bg-paper px-4 py-3">
-            <dt className="text-xs text-muted">{s.label}</dt>
-            <dd className="mt-1 font-bold text-primary">{s.value}</dd>
+          <div key={s.label} className="flex flex-wrap justify-between gap-x-1.5 rounded-xl border border-line bg-paper px-4 py-3 text-sm font-bold">
+            <dt className="text-ink">{s.label}:</dt>
+            <dd className="text-primary">{s.value}</dd>
           </div>
         ))}
       </dl>
