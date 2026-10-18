@@ -1,4 +1,4 @@
-import { faFacebookF } from "@fortawesome/free-brands-svg-icons";
+import { faFacebookF, faTiktok } from "@fortawesome/free-brands-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Link from "next/link";
 import { NavLinks } from "@/components/layout/nav-links";
@@ -16,6 +16,11 @@ export function Logo() {
   );
 }
 
+const socials = [
+  { href: site.facebook, label: "Kết nối Facebook", icon: faFacebookF },
+  { href: site.tiktok, label: "Kết nối TikTok", icon: faTiktok },
+];
+
 export function Header() {
   return (
     <header className="sticky top-0 z-30 border-b border-line/70 bg-white/90 backdrop-blur">
@@ -25,18 +30,21 @@ export function Header() {
           <NavLinks className="hidden items-center gap-1 text-sm font-medium lg:flex" />
         </div>
         <div className="flex items-center gap-2">
-          <a
-            href={site.facebook}
-            target="_blank"
-            rel="noopener noreferrer"
-            aria-label="Kết nối Facebook"
-            className="group inline-flex items-center gap-2 rounded-lg border border-primary/25 bg-white p-1.5 text-sm font-semibold text-ink transition hover:border-primary hover:bg-primary-soft hover:text-primary sm:py-1.5 sm:pr-4 sm:pl-1.5"
-          >
-            <span className="grid h-7 w-7 place-items-center rounded-md bg-primary-soft text-primary transition group-hover:bg-primary group-hover:text-white">
-              <FontAwesomeIcon icon={faFacebookF} />
-            </span>
-            <span className="hidden sm:inline">Kết nối Facebook</span>
-          </a>
+          {socials.map((s) => (
+            <a
+              key={s.label}
+              href={s.href}
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label={s.label}
+              className="group inline-flex items-center gap-2 rounded-lg border border-primary/25 bg-white p-1.5 text-sm font-semibold text-ink transition hover:border-primary hover:bg-primary-soft hover:text-primary sm:py-1.5 sm:pr-4 sm:pl-1.5"
+            >
+              <span className="grid h-7 w-7 place-items-center rounded-md bg-primary-soft text-primary transition group-hover:bg-primary group-hover:text-white">
+                <FontAwesomeIcon icon={s.icon} />
+              </span>
+              <span className="hidden sm:inline">{s.label}</span>
+            </a>
+          ))}
         </div>
       </div>
       <NavLinks className="flex gap-1 overflow-x-auto px-2.5 pb-2 text-sm font-medium lg:hidden" />

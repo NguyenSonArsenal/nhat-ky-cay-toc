@@ -1,4 +1,5 @@
 import { About } from "@/components/home/about";
+import { Faq } from "@/components/home/faq";
 import { Features } from "@/components/home/features";
 import { Hero } from "@/components/home/hero";
 import { Honest } from "@/components/home/honest";
@@ -15,6 +16,7 @@ export default function Home() {
       <Features />
       <Journey />
       <Honest />
+      <Faq />
       <Posts />
     </>
   );

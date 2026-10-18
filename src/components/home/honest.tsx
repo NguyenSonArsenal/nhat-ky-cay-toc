@@ -16,15 +16,13 @@ const points = [
 
 export function Honest() {
   return (
-    <section id="noi-that" className="bg-paper py-20">
+    <section id="noi-that" className="bg-paper py-12">
       <div className="mx-auto max-w-6xl px-4">
         <div className="flex flex-col justify-between gap-6 md:flex-row md:items-end">
-          <h2 className="max-w-xl text-3xl font-bold leading-tight text-ink md:text-4xl">
-            Nói thật để anh em <span className="text-primary">khỏi bất ngờ</span>
-          </h2>
+          <h2 className="max-w-xl text-2xl font-bold text-ink md:text-3xl">Nói thật để anh em khỏi bất ngờ</h2>
           <p className="max-w-xs text-sm text-muted">Mấy điều mình ước có người nói trước cho mình.</p>
         </div>
-        <div className="mt-10 grid gap-6 md:grid-cols-3">
+        <div className="mt-6 grid gap-6 md:grid-cols-3">
           {points.map((p, i) => (
             <article key={p.title} className="rounded-2xl border-t-4 border-primary bg-white p-6 shadow-sm">
               <span className="grid h-10 w-10 place-items-center rounded-full bg-primary font-bold text-white">{i + 1}</span>

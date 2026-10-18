@@ -19,7 +19,7 @@ export function ScrollToTop() {
       type="button"
       aria-label="Lên đầu trang"
       onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
-      className={`fixed right-4 bottom-24 z-40 grid h-9 w-9 cursor-pointer place-items-center rounded-full bg-primary text-sm text-white shadow-lg shadow-primary/30 transition hover:bg-primary-dark md:right-6 md:bottom-6 ${
+      className={`fixed right-4 bottom-24 z-40 grid h-9 w-9 cursor-pointer place-items-center rounded-full border border-primary bg-white text-sm text-primary shadow-lg transition hover:bg-primary-soft md:right-6 md:bottom-6 ${
         visible ? "opacity-100" : "pointer-events-none translate-y-2 opacity-0"
       }`}
     >

@@ -9,6 +9,7 @@
     "lint": "eslint"
   },
   "dependencies": {
+    "@fancyapps/ui": "5.0.36",
     "@fortawesome/fontawesome-svg-core": "^7.3.1",
     "@fortawesome/free-brands-svg-icons": "^7.3.1",
     "@fortawesome/free-solid-svg-icons": "^7.3.1",
@@ -19,7 +20,8 @@
     "next": "16.4.0",
     "qrcode": "^1.5.4",
     "react": "19.3.0",
-    "react-dom": "19.3.0"
+    "react-dom": "19.3.0",
+    "swiper": "11.1.14"
   },
   "devDependencies": {
     "@tailwindcss/turbopack": "^4",

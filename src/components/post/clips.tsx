@@ -33,12 +33,11 @@ export function Clip({ id, day, caption }: { id: string; day: string; caption?: 
   );
 }
 
-// Trích nguyên văn caption video
-export function Quote({ day, children }: { day: string; children: ReactNode }) {
+// Trích nguyên văn caption video (day giữ lại trong MDX để biết câu của ngày nào, không hiện ra)
+export function Quote({ children }: { day?: string; children: ReactNode }) {
   return (
     <blockquote className="my-6 rounded-r-2xl border-l-4 border-primary bg-primary-soft/60 px-5 py-4">
       <p className="text-[15px] italic leading-relaxed text-ink">“{children}”</p>
-      <footer className="mt-2 text-xs font-semibold text-primary">Caption video {day}</footer>
     </blockquote>
   );
 }

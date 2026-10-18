@@ -50,11 +50,11 @@ export function Tldr({ points }: { points: string[] }) {
 // Câu hỏi đánh số, bấm để mở câu trả lời
 export function FaqList({ items }: { items: Faq[] }) {
   return (
-    <section id="faq" className="mt-14 scroll-mt-28">
+    <section id="faq" className="mt-10 scroll-mt-28">
       <h2 className="mb-4 text-2xl font-bold text-ink md:text-[28px]">Câu hỏi anh em hay hỏi</h2>
       <div className="divide-y divide-line border-y border-line">
         {items.map((f, i) => (
-          <details key={f.q} className="group py-5">
+          <details key={f.q} className="group py-3">
             <summary className="flex cursor-pointer list-none items-start gap-4 [&::-webkit-details-marker]:hidden">
               <span className="text-2xl leading-none font-bold text-primary">{i + 1}</span>
               <span className="flex-1 text-[17px] font-semibold text-ink">{f.q}</span>
@@ -75,7 +75,7 @@ export function AuthorBox() {
     { href: zaloUrl, label: "Zalo", icon: faCommentDots },
   ].filter((s) => s.href);
   return (
-    <section className="mt-14 grid items-center gap-6 rounded-3xl bg-gradient-to-br from-primary-soft to-paper p-6 md:grid-cols-[1fr_auto] md:p-10">
+    <section className="mt-10 grid items-center gap-6 rounded-3xl bg-gradient-to-br from-primary-soft to-paper p-6 md:grid-cols-[1fr_auto] md:p-10">
       <div>
         <p className="text-3xl font-extrabold text-primary">{site.nickname}</p>
         <div className="mt-3 flex gap-3 text-ink">
@@ -86,15 +86,15 @@ export function AuthorBox() {
           ))}
         </div>
         <p className="mt-3 text-[15px] leading-relaxed">
-          Mình là {site.author}, cấy tóc ngày {site.surgeryDate} và quay nhật ký trên TikTok từ những ngày đầu. Không
-          phải bác sĩ, chỉ là người đã trải qua. Anh em định cấy thì nhắn mình lấy mã giảm {site.discount}, hỏi gì về
-          hành trình mình cũng kể.
+          Mình là {site.author}, cấy tóc ngày {site.surgeryDate}. Mình làm seri nhật ký này để chia sẻ với những anh em
+          đang cùng cảnh rụng tóc như mình: cấy xong tóc ra sao, lúc ổn lúc thảm thế nào, mình kể hết. Mình không phải
+          bác sĩ, chỉ là người đã trải qua. Anh em có gì lăn tăn cứ nhắn mình nhé.
         </p>
         <a
           href={contactUrl}
           target="_blank"
           rel="noopener noreferrer"
-          className="mt-5 inline-flex items-center gap-2 rounded-lg bg-primary px-5 py-3 text-sm font-semibold text-white shadow-md shadow-primary/25 hover:bg-primary-dark"
+          className="mt-5 inline-flex items-center gap-2 rounded-lg border border-primary bg-white px-5 py-3 text-sm font-semibold text-primary hover:bg-primary-soft"
         >
           <FontAwesomeIcon icon={faCommentDots} />
           Chat Zalo với mình
@@ -132,14 +132,18 @@ export function RelatedSidebar({ posts }: { posts: PostMeta[] }) {
         <p className="mt-2 text-lg font-extrabold text-ink">
           Mã giảm <span className="text-primary">{site.discount}</span>
         </p>
-        <p className="mt-1 text-sm">Cấy ở {site.clinic} thì nhắn mình lấy mã.</p>
+        <p className="mt-1 text-sm">
+          Anh em định cấy ở {site.clinic}, nơi mình đã cấy, thì nhắn mình để nhận mã. Mã trừ trực tiếp vào chi phí cấy
+          tóc.
+        </p>
         <a
           href={contactUrl}
           target="_blank"
           rel="noopener noreferrer"
-          className="mt-4 inline-flex rounded-lg bg-primary px-4 py-2.5 text-sm font-semibold text-white hover:bg-primary-dark"
+          className="mt-4 inline-flex items-center gap-2 rounded-lg border border-primary bg-white px-4 py-2.5 text-sm font-semibold text-primary hover:bg-primary-soft"
         >
-          Nhận mã ưu đãi
+          <FontAwesomeIcon icon={faCommentDots} />
+          Nhắn mình lấy mã
         </a>
       </div>
     </div>

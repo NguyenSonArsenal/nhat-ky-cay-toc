@@ -8,7 +8,7 @@ import { site } from "@/config/site";
 export function About() {
   return (
     <section id="ve-minh" className="-mt-16 px-4">
-      <div className="mx-auto grid max-w-6xl items-center gap-10 rounded-3xl border border-line bg-white p-6 shadow-[0_10px_40px_-20px_rgba(0,0,0,0.25)] md:grid-cols-[1fr_1.25fr] md:p-12">
+      <div className="mx-auto grid max-w-6xl items-center gap-10 rounded-3xl border border-line bg-white p-6 shadow-[0_10px_40px_-20px_rgba(0,0,0,0.25)] md:grid-cols-[1fr_1.25fr] md:p-8">
         <div className="relative aspect-square w-full max-w-sm justify-self-center overflow-hidden rounded-3xl border-4 border-white shadow-[8px_8px_0_0_var(--primary)]">
           <Image
             src="/images/avatar.jpg"

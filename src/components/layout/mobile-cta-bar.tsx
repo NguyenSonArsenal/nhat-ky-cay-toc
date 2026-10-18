@@ -11,7 +11,7 @@ export function MobileCtaBar() {
           href={contactUrl}
           target="_blank"
           rel="noopener noreferrer"
-          className="flex flex-1 items-center justify-center gap-2 rounded-lg bg-primary py-3 text-sm font-semibold text-white"
+          className="flex flex-1 items-center justify-center gap-2 rounded-lg border border-primary bg-white py-3 text-sm font-semibold text-primary"
         >
           <FontAwesomeIcon icon={faCommentDots} />
           {zaloUrl ? "Nhắn Zalo" : "Nhắn TikTok"}

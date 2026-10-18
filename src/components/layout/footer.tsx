@@ -18,6 +18,7 @@ const columns = [
   {
     title: "Kiến thức",
     links: [
+      { href: "/bai-viet", label: "Tất cả bài viết" },
       { href: "/bai-viet/tuan-dau-sau-cay-toc", label: "Tháng đầu sau cấy" },
       { href: "/bai-viet/rung-soc-sau-cay-toc", label: "Rụng sốc sau cấy" },
       { href: "/bai-viet/toc-moc-lai-sau-cay-toc", label: "Tóc mọc lại sau cấy" },
@@ -26,6 +27,7 @@ const columns = [
   {
     title: "Liên hệ",
     links: [
+      { href: "/lien-he", label: "Trang liên hệ" },
       { href: zaloUrl, label: "Nhắn Zalo" },
       { href: site.facebook, label: "Facebook" },
       { href: site.tiktok, label: "TikTok" },

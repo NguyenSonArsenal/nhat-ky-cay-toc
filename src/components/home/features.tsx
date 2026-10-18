@@ -19,7 +19,7 @@ const cards = [
     text: "Ảnh thật từ ngày 5 đến hôm nay, cả lúc ổn lẫn lúc thảm nhất. Bấm vào là xem được video.",
   },
   {
-    href: "/#kinh-nghiem",
+    href: "/bai-viet",
     image: cover("7636370492471151892"),
     day: "Ngày 8",
     position: "50% 52%",
@@ -38,9 +38,9 @@ const cards = [
 
 export function Features() {
   return (
-    <section className="mx-auto max-w-6xl px-4 py-20">
+    <section className="mx-auto max-w-6xl px-4 py-12">
       <SectionHeading title="Hành trình của mình sẽ có những gì" sub="Mọi thứ mình biết về cấy tóc, gom về một chỗ cho anh em đỡ phải đi tìm." />
-      <div className="mt-10 grid gap-6 md:grid-cols-3">
+      <div className="mt-6 grid gap-6 md:grid-cols-3">
         {cards.map(({ href, image, day, position, title, text }) => (
           <article
             key={title}
@@ -66,7 +66,7 @@ export function Features() {
               <Link
                 href={href}
                 {...(href.startsWith("http") && { target: "_blank", rel: "noopener noreferrer" })}
-                className="mt-5 inline-flex w-fit items-center gap-1.5 rounded-md bg-primary px-3.5 py-2 text-xs font-semibold text-white hover:bg-primary-dark"
+                className="mt-5 inline-flex w-fit items-center gap-1.5 rounded-md border border-primary bg-white px-3.5 py-2 text-xs font-semibold text-primary hover:bg-primary-soft"
               >
                 Xem thêm <FontAwesomeIcon icon={faChevronRight} className="text-[10px]" />
               </Link>

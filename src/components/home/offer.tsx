@@ -6,8 +6,8 @@ import { contactUrl, site, zaloDisplay, zaloUrl } from "@/config/site";
 
 export function Offer() {
   return (
-    <section id="uu-dai" className="mx-auto max-w-6xl px-4 py-20">
-      <div className="grid items-center gap-10 rounded-3xl border border-line bg-white p-6 shadow-sm md:grid-cols-[1.4fr_1fr] md:p-12">
+    <section id="uu-dai" className="mx-auto max-w-6xl px-4 py-12">
+      <div className="grid items-center gap-10 rounded-3xl border border-line bg-white p-6 shadow-sm md:grid-cols-[1.4fr_1fr] md:p-8">
         <div>
           <p className="text-sm font-semibold text-primary">Có cái này cho anh em</p>
           <h2 className="mt-1 text-3xl font-extrabold leading-tight text-ink md:text-4xl">
@@ -39,7 +39,7 @@ export function Offer() {
             href={contactUrl}
             target="_blank"
             rel="noopener noreferrer"
-            className="mt-6 inline-flex items-center gap-2 rounded-lg bg-primary px-5 py-3 text-sm font-semibold text-white shadow-md shadow-primary/25 hover:bg-primary-dark"
+            className="mt-6 inline-flex items-center gap-2 rounded-lg border border-primary bg-white px-5 py-3 text-sm font-semibold text-primary hover:bg-primary-soft"
           >
             <FontAwesomeIcon icon={faCommentDots} />
             {zaloUrl ? `Nhắn Zalo ${zaloDisplay}` : "Nhắn TikTok nhận mã"}

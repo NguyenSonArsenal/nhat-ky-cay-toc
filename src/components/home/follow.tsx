@@ -13,12 +13,12 @@ const platforms = [
 
 export function Follow() {
   return (
-    <section id="lien-he" className="mx-auto max-w-6xl px-4 pb-24">
+    <section id="lien-he" className="mx-auto max-w-6xl px-4 pb-16">
       <SectionHeading
         title="Ghé chơi với mình nhé"
         sub="Tuần nào mình cũng lên 1–2 video. Có gì thắc mắc cứ nhắn, mình sẽ trả lời."
       />
-      <div className="mt-10 grid grid-cols-2 gap-4 lg:grid-cols-4">
+      <div className="mt-6 grid grid-cols-2 gap-4 lg:grid-cols-4">
         {platforms.map((p) => {
           const inner = (
             <>

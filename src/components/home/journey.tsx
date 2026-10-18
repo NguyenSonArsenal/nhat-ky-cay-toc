@@ -3,8 +3,9 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Image from "next/image";
 import { PhotoSlot } from "@/components/ui/photo-slot";
 import { SectionHeading } from "@/components/ui/section-heading";
+import { TikTokVideo } from "@/components/ui/tiktok-video";
 import { PENDING, site } from "@/config/site";
-import { milestones } from "@/content/milestones";
+import { type Milestone, milestones } from "@/content/milestones";
 
 const stats = [
   { label: "Ngày cấy", value: site.surgeryDate },
@@ -14,7 +15,7 @@ const stats = [
 
 export function Journey() {
   return (
-    <section id="hanh-trinh" className="mx-auto max-w-6xl px-4 pb-20">
+    <section id="hanh-trinh" className="mx-auto max-w-6xl px-4 pb-12">
       <SectionHeading
         title="Tóc mình qua từng mốc"
         sub={`Ảnh cắt từ video TikTok của mình. Đang ở tháng thứ ${site.currentMonth}, mốc tiếp theo cập nhật ngày ${site.nextUpdate}.`}
@@ -27,7 +28,7 @@ export function Journey() {
           </div>
         ))}
       </dl>
-      <ol className="mt-8 grid grid-cols-2 gap-4 sm:grid-cols-3 lg:grid-cols-5">
+      <ol className="mt-6 grid grid-cols-2 gap-4 sm:grid-cols-3 lg:grid-cols-5">
         {milestones.map((m) => (
           <li
             key={m.label}
@@ -41,15 +42,7 @@ export function Journey() {
               </span>
             )}
             {m.image ? (
-              <div className="relative aspect-[3/4] w-full overflow-hidden rounded-xl bg-paper">
-                <Image
-                  src={m.image}
-                  alt={`Tóc ${m.label.toLowerCase()} sau cấy: ${m.stage.toLowerCase()}`}
-                  fill
-                  sizes="(min-width: 1024px) 220px, (min-width: 640px) 30vw, 45vw"
-                  className="object-cover"
-                />
-              </div>
+              <MilestonePhoto m={m} />
             ) : (
               <PhotoSlot
                 label={m.status === "next" ? `Cập nhật ${m.date}` : "Chưa tới mốc"}
@@ -63,19 +56,45 @@ export function Journey() {
             <p className="mt-1 text-sm font-medium">{m.stage}</p>
             {m.note && <p className="mt-1 text-xs italic leading-relaxed text-muted">“{m.note}”</p>}
             {m.video && (
-              <a
-                href={m.video}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="mt-auto inline-flex items-center gap-1.5 pt-2 text-xs font-semibold text-primary hover:underline"
+              <TikTokVideo
+                url={m.video}
+                title={`Nhật ký cấy tóc ${m.label.toLowerCase()}`}
+                className="mt-auto inline-flex w-fit items-center gap-1.5 pt-2 text-xs font-semibold text-primary hover:underline"
               >
                 <FontAwesomeIcon icon={faPlay} className="text-[10px]" />
                 Xem video
-              </a>
+              </TikTokVideo>
             )}
           </li>
         ))}
       </ol>
     </section>
+  );
+}
+
+function MilestonePhoto({ m }: { m: Milestone }) {
+  const photo = (
+    <div className="relative aspect-[3/4] w-full overflow-hidden rounded-xl bg-paper">
+      <Image
+        src={m.image!}
+        alt={`Tóc ${m.label.toLowerCase()} sau cấy: ${m.stage.toLowerCase()}`}
+        fill
+        sizes="(min-width: 1024px) 220px, (min-width: 640px) 30vw, 45vw"
+        className="object-cover transition duration-300 group-hover:scale-105"
+      />
+      {m.video && (
+        <span className="absolute inset-0 grid place-items-center bg-black/0 transition group-hover:bg-black/20">
+          <span className="grid h-12 w-12 place-items-center rounded-full bg-white/90 text-primary shadow-lg transition group-hover:scale-110">
+            <FontAwesomeIcon icon={faPlay} className="ml-0.5" />
+          </span>
+        </span>
+      )}
+    </div>
+  );
+  if (!m.video) return photo;
+  return (
+    <TikTokVideo url={m.video} title={`Nhật ký cấy tóc ${m.label.toLowerCase()}`} className="group block w-full">
+      {photo}
+    </TikTokVideo>
   );
 }

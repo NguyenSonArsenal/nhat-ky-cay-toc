@@ -5,6 +5,7 @@
   --primary: #b20707;
   --primary-dark: #8a0505; /* hover */
   --primary-soft: #fbe9e9; /* nền nhạt */
+  --swiper-theme-color: var(--primary); /* Swiper mặc định màu xanh */
 }
 
 @theme {
@@ -15,6 +16,59 @@
   /* Nền và viền: trắng kem, hồng nhạt */
   --color-line: #f1dfdb;
   --color-paper: #fdf4f0;
+  --color-page: #fffaf8; /* nền trang */
+}
+
+/* Theme sáng như quinndigio.com: nền trắng, đầu trang phủ hồng rất nhạt, chữ gần đen, nhấn đỏ.
+   Bật bằng site.theme = "light". */
+:root[data-theme="light"] {
+  --primary-soft: #fdf3f3;
+  --color-ink: #111111;
+  --color-body: #333333;
+  --color-muted: #6b6b6b;
+  --color-line: #eeeeee;
+  --color-paper: #fbfbfb;
+  --color-page: #ffffff;
+}
+
+/* Theme tối như tkdodo.eu (chế độ dark). Bật bằng site.theme = "dark".
+   Đổi luôn --color-white thành màu thẻ, nên các khối bg-white thành thẻ tối,
+   còn chữ trắng trên nút (text-white trên bg-primary sáng) tự thành chữ tối. */
+:root[data-theme="dark"] {
+  /* Mã màu lấy đúng từ CSS chế độ dark của tkdodo.eu */
+  color-scheme: dark;
+  --primary: #76c2af; /* --color-primary: nút, link */
+  --primary-dark: #8fd1c1; /* hover: sáng hơn một chút */
+  --primary-soft: #2d3748; /* --color-ic-bg */
+  --color-white: #2d3748; /* nền thẻ (--color-ic-bg) */
+  --color-ink: #cbd5e0; /* --color-highlight */
+  --color-body: #cbd5e0; /* --color-text */
+  --color-muted: #a0aec0; /* --color-subtle */
+  --color-line: #4a5568; /* --color-ic-border */
+  --color-paper: #1a202c;
+  --color-page: #1a202c; /* --color-bg */
+}
+
+/* Banner bài viết ở theme tối: phủ lớp tối, chữ trắng thật (không lấy --color-white) */
+:root[data-theme="dark"] .post-banner-overlay {
+  background-image: linear-gradient(to top, rgb(26 32 44 / 0.95), rgb(26 32 44 / 0.6), rgb(26 32 44 / 0.1));
+}
+:root[data-theme="dark"] .post-banner-text,
+:root[data-theme="dark"] .post-banner-text * {
+  color: #fff;
+}
+
+/* Theme đen trắng, tham khảo tkdodo.eu. Bật bằng site.theme = "mono" trong config/site.ts */
+:root[data-theme="mono"] {
+  --primary: #111111;
+  --primary-dark: #000000;
+  --primary-soft: #f2f2f2;
+  --color-ink: #111111;
+  --color-body: #333333;
+  --color-muted: #6b6b6b;
+  --color-line: #e6e6e6;
+  --color-paper: #f7f7f7;
+  --color-page: #ffffff;
 }
 
 @theme inline {
@@ -31,6 +85,60 @@ html {
 }
 
 body {
-  background: #fffaf8;
+  background: var(--color-page);
   color: var(--color-body);
 }
+
+/* ── Swiper gallery (chép từ banghang.net public/css/common.css) ──
+   --media-ratio: tỉ lệ khung ảnh chính (truyền qua inline style ở component). */
+.sw-gallery { width: 100%; }
+.sw-gallery .sw-main {
+  width: 100%; aspect-ratio: var(--media-ratio);
+  border-radius: 12px; overflow: hidden; background: #111;
+}
+.sw-gallery .sw-main .swiper-wrapper { height: 100%; }
+.sw-gallery .sw-main .swiper-slide { height: 100%; display: flex; align-items: center; justify-content: center; background: #111; }
+.sw-gallery .sw-main .swiper-slide img { width: 100%; height: 100%; object-fit: cover; display: block; cursor: zoom-in; }
+
+/* Nút Zoom góc dưới-trái ảnh chính */
+.sw-gallery .sw-zoom-btn {
+  position: absolute; left: 12px; bottom: 12px; z-index: 11;
+  display: inline-flex; align-items: center; gap: 5px;
+  background: rgba(0,0,0,.5); color: #fff; border: none;
+  padding: 5px 11px; border-radius: 20px; font-size: 12px; font-weight: 600;
+  cursor: pointer; font-family: inherit; transition: background .15s;
+}
+.sw-gallery .sw-zoom-btn:hover { background: rgba(0,0,0,.75); }
+
+/* Nút prev / next */
+.sw-gallery .swiper-button-prev,
+.sw-gallery .swiper-button-next {
+  width: 38px; height: 38px; border-radius: 50%;
+  background: rgba(0,0,0,.45); color: #fff;
+}
+.sw-gallery .swiper-button-prev:hover,
+.sw-gallery .swiper-button-next:hover { background: rgba(0,0,0,.7); }
+.sw-gallery .swiper-button-prev::after,
+.sw-gallery .swiper-button-next::after { font-size: 15px; font-weight: 700; }
+
+/* Đếm ảnh (fraction) */
+.sw-gallery .swiper-pagination {
+  left: auto; right: 12px; bottom: 12px; width: auto;
+  background: rgba(0,0,0,.5); color: #fff;
+  padding: 3px 10px; border-radius: 20px; font-size: 12px; font-weight: 600;
+}
+
+/* Thumbnail phía dưới */
+.sw-gallery .sw-thumbs { margin-top: 10px; }
+.sw-gallery .sw-thumbs .swiper-slide {
+  width: 88px; height: 62px; border-radius: 8px; overflow: hidden;
+  cursor: pointer; opacity: .55; border: 2px solid transparent;
+  transition: opacity .15s, border-color .15s;
+}
+.sw-gallery .sw-thumbs .swiper-slide img { width: 100%; height: 100%; object-fit: cover; display: block; }
+.sw-gallery .sw-thumbs .swiper-slide-thumb-active { opacity: 1; border-color: var(--primary); }
+
+@media (max-width: 768px) {
+  .sw-gallery .sw-thumbs .swiper-slide { width: 64px; height: 46px; }
+}
+

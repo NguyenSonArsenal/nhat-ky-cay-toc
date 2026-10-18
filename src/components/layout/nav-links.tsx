@@ -7,9 +7,11 @@ import { useEffect, useState } from "react";
 // `id` là id section trên trang chủ dùng để đánh dấu khi cuộn; `page` là trang riêng (nếu có).
 export const navItems = [
   { id: "trang-chu", href: "/", label: "Trang chủ" },
-  { id: "hanh-trinh", href: "/#hanh-trinh", label: "Hành trình" },
-  { id: "kinh-nghiem", href: "/#kinh-nghiem", label: "Kinh nghiệm" },
   { id: "ve-minh", href: "/ve-minh", label: "Về mình", page: "/ve-minh" },
+  { id: "lien-he", href: "/lien-he", label: "Liên hệ", page: "/lien-he" },
+  { id: "hanh-trinh", href: "/#hanh-trinh", label: "Hành trình" },
+  // id trùng section "Kinh nghiệm" trên trang chủ để cuộn tới đó thì mục Blog sáng lên
+  { id: "kinh-nghiem", href: "/bai-viet", label: "Blog", page: "/bai-viet" },
 ];
 
 // Khoảng cách từ đỉnh màn hình để coi một section là "đang xem" (chừa chỗ cho header).
