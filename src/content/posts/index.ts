@@ -37,7 +37,7 @@ export const posts: PostMeta[] = [
     faq: [
       {
         q: "Hói chữ M có phải rụng một lúc là hói ngay không?",
-        a: "Với mình thì không. Tóc rụng dần qua nhiều năm, đến lúc nhìn lại ảnh cũ mới giật mình. Nguyên nhân cụ thể của từng người anh em nên hỏi bác sĩ.",
+        a: "Với mình thì không. Tóc lùi dần từng chút qua gần chục năm, đến lúc lôi ảnh năm 17 tuổi ra so mới giật mình.",
       },
     ],
   },
@@ -59,7 +59,7 @@ export const posts: PostMeta[] = [
     faq: [
       {
         q: "32 tuổi có nên cấy tóc không?",
-        a: "Mình 32 tuổi và đã cấy tự thân 2.450 nang. Có nên hay không thì tuỳ tình trạng tóc và tài chính của từng người, anh em nên hỏi bác sĩ và xem nhật ký của người đã cấy trước khi quyết.",
+        a: "Mình 32 tuổi mới cấy và không thấy muộn chút nào. Nếu anh em cũng đang phải đội mũ mỗi ngày như mình hồi đó, mình nghĩ là nên.",
       },
     ],
   },
@@ -83,15 +83,15 @@ export const posts: PostMeta[] = [
     faq: [
       {
         q: "Sau cấy tóc bao lâu thì được đội mũ bảo hiểm?",
-        a: "Ngày 11 mình vẫn chưa được đội nên phải đi xe bus. Đến ngày 58 thì mình đã đội lại và có quay video cách đội để bảo vệ vùng cấy. Mốc chính xác cho từng người anh em nên hỏi bác sĩ nơi mình cấy.",
+        a: "Mình đội lại từ ngày 58, trước đó toàn đi xe bus. Xe bus 10 nghìn một chuyến, vừa rẻ vừa mát, chịu khó gần hai tháng là ổn.",
       },
       {
         q: "Gội đầu sau cấy tóc thế nào?",
-        a: "Mấy ngày đầu mình theo lịch ở phòng khám, đến ngày 5 mới tự chăm sóc ở nhà. Khi tự gội thì mình gội từ từ, thật nhẹ tay. Cách gội cụ thể anh em làm theo hướng dẫn của phòng khám nơi mình cấy.",
+        a: "Ngày 5 mình bắt đầu tự gội ở nhà, gội từ từ, nhẹ tay hết mức. Cứ nghĩ rớt một sợi là mất 27 nghìn là tự khắc nhẹ tay.",
       },
       {
         q: "Cấy tóc có đau không?",
-        a: "Với một người sợ đau như mình thì có đau nhẹ, nhưng vẫn chịu được.",
+        a: "Có đau nhẹ, nhưng một người sợ đau như mình vẫn chịu được. Với mình, mấy tháng chờ tóc mọc còn khó hơn lúc cấy nhiều.",
       },
     ],
   },
@@ -115,15 +115,15 @@ export const posts: PostMeta[] = [
     faq: [
       {
         q: "Rụng sốc sau cấy tóc kéo dài bao lâu?",
-        a: "Với mình, tóc con bắt đầu rụng lác đác từ ngày 22, rụng nhiều nhất khoảng ngày 40 đến 60, và đến ngày 85 mới thấy tóc con mọc lại. Mỗi người mỗi khác, anh em nên hỏi bác sĩ nơi mình cấy.",
+        a: "Với mình là gần hai tháng: rụng nhiều nhất từ ngày 40 đến 60, ngày 85 mới thấy tóc con. Đó là đoạn mình stress nhất, nhưng rồi cũng qua.",
       },
       {
         q: "Rụng sốc có phải là cấy hỏng không?",
-        a: "Lúc đó mình cũng sợ y như vậy. Nhưng với mình, sau giai đoạn rụng thì tóc mọc lại từ ngày 85 và đến ngày 155 đã lên khá ổn. Nếu lo thì anh em cứ hỏi thẳng bác sĩ để yên tâm.",
+        a: "Lúc đó mình cũng sợ y vậy. Nhưng ngày 85 tóc mọc lại, ngày 155 đã lên khá ổn, nên giờ mình coi đó là đoạn ai cấy cũng phải đi qua.",
       },
       {
         q: "Có cần tiêm PRP sau cấy tóc không?",
-        a: "Mình tiêm PRP lần 1 vào ngày 55 để hỗ trợ nang tóc. Có nên tiêm hay không thì tuỳ tình trạng từng người, anh em nên hỏi bác sĩ.",
+        a: "Mình tiêm lần 1 vào ngày 55, đúng lúc rụng nhiều nhất. Mình không đo được nó giúp bao nhiêu, nhưng lúc đó làm thêm được gì cho tóc là mình làm.",
       },
     ],
   },
@@ -147,11 +147,11 @@ export const posts: PostMeta[] = [
     faq: [
       {
         q: "Sau cấy tóc bao lâu thì tóc mọc lại?",
-        a: "Với mình là khoảng ngày 85 mới thấy tóc con xuất hiện, ngày 90 thì mọc rõ hơn. Mỗi người nhanh chậm khác nhau.",
+        a: "Mình phải chờ đến ngày 85 mới thấy tóc con, ngày 90 mọc rõ hơn. Chậm thật, nhưng thấy mấy sợi đầu tiên là vui lắm rồi.",
       },
       {
         q: "Bao lâu thì tóc cấy nhìn ổn?",
-        a: "Mình thấy ổn từ khoảng ngày 132 đến 155, tức là hơn 4 đến 5 tháng. Mình vẫn đang chờ tóc dài và dày thêm, và sẽ cập nhật tiếp đến tròn 1 năm.",
+        a: "Mình thấy ổn từ ngày 132, đến ngày 155 thì vuốt tạo kiểu được rồi. Tức là cỡ 4 đến 5 tháng, anh em đừng mong sớm hơn kẻo sốt ruột.",
       },
     ],
   },
@@ -166,11 +166,11 @@ export const posts: PostMeta[] = [
     coverAlt: "Vùng cấy tóc ngày thứ 5 sau cấy",
     tldr: [
       "Có đau nhẹ, người sợ đau như mình vẫn chịu được.",
-      "Cách gây tê mỗi phòng khám một kiểu, nên hỏi bác sĩ trước.",
-      "Phần khó nhất với mình là chờ tóc mọc, không phải lúc cấy.",
+      "Phần khó nhất với mình không phải lúc cấy, mà là mấy tháng chờ tóc mọc.",
+      "Ngày 35 mình có quay riêng video trả lời câu này cho anh em.",
     ],
     faq: [
-      { q: "Cấy tóc có đau không?", a: "Với một người sợ đau như mình thì có đau nhẹ, nhưng vẫn chịu được. Cách gây tê cụ thể anh em hỏi bác sĩ nơi mình cấy." },
+      { q: "Cấy tóc có đau không?", a: "Có đau nhẹ, nhưng một người sợ đau như mình vẫn chịu được. Với mình, mấy tháng chờ tóc mọc còn khó hơn lúc cấy nhiều." },
     ],
   },
   {
@@ -185,10 +185,10 @@ export const posts: PostMeta[] = [
     tldr: [
       "Cấy tóc tự thân là dùng tóc sau gáy của chính mình cấy lên vùng rụng phía trước.",
       "Cấy xong tóc ở vùng cấy sẽ rụng một đợt rồi mới mọc lại.",
-      "Kỹ thuật cụ thể anh em hỏi bác sĩ, mình chỉ kể trải nghiệm.",
+      "Với mình, ngày 85 mới thấy tóc con, ngày 155 mới thấy ổn.",
     ],
     faq: [
-      { q: "Cấy tóc tự thân là gì?", a: "Theo cách mình hiểu, đó là dùng tóc phía sau gáy của chính mình để cấy lên vùng rụng phía trước. Muốn hiểu kỹ về kỹ thuật thì anh em hỏi bác sĩ." },
+      { q: "Cấy tóc tự thân là gì?", a: "Hiểu đơn giản là lấy tóc sau gáy của chính mình cấy lên chỗ hói. Tóc là tóc của mình, nhưng cấy xong phải chờ vài tháng nó mới mọc." },
     ],
   },
   {
@@ -203,10 +203,10 @@ export const posts: PostMeta[] = [
     tldr: [
       "Mình hói chữ M khá nặng gần chục năm, ra đường luôn phải có mũ.",
       "Biết đến cấy tóc tự thân qua TikTok, đắn đo rất lâu và đi làm tiết kiệm tiền rồi mới cấy.",
-      "Có nên cấy hay không thì anh em tự tìm hiểu kỹ và hỏi bác sĩ.",
+      "Ngày 165 vuốt tóc ngược lên không còn vùng trống, với mình là đáng.",
     ],
     faq: [
-      { q: "Hói chữ M có nên cấy tóc không?", a: "Mình không trả lời thay anh em được. Mình hói chữ M gần chục năm và đã chọn cấy tự thân. Anh em nên xem nhật ký của người đã cấy, hỏi bác sĩ và tính chuyện tiền nong cho kỹ." },
+      { q: "Hói chữ M có nên cấy tóc không?", a: "Mình hói chữ M gần chục năm, giờ nhìn lại thấy cấy là quyết định đúng. Nếu anh em cũng đi đâu cũng phải đội mũ thì mình nghĩ đáng để cấy." },
     ],
   },
   {
@@ -224,7 +224,7 @@ export const posts: PostMeta[] = [
       "Cấy ở Phòng khám bác sĩ Duy Thành thì nhắn mình lấy mã giảm 3 triệu.",
     ],
     faq: [
-      { q: "Cấy tóc bao nhiêu tiền một nang?", a: "Với mình, tính ra mỗi nang tầm 27 nghìn. Giá mỗi nơi mỗi khác, anh em nên hỏi thẳng phòng khám." },
+      { q: "Cấy tóc bao nhiêu tiền một nang?", a: "Với mình tính ra tầm 27 nghìn một nang, cấy 2.450 nang. Với người làm công ăn lương là khoản lớn, nhưng nhìn tóc bây giờ thì mình thấy đáng." },
     ],
   },
   {
@@ -242,7 +242,7 @@ export const posts: PostMeta[] = [
       "Cách gội cụ thể làm đúng hướng dẫn của nơi mình cấy.",
     ],
     faq: [
-      { q: "Sau cấy tóc bao lâu thì tự gội đầu được?", a: "Mình theo lịch chăm sóc ở phòng khám mấy ngày đầu, đến ngày 5 mới tự chăm sóc tại nhà. Mốc của từng người anh em hỏi phòng khám nơi mình cấy." },
+      { q: "Sau cấy tóc bao lâu thì tự gội đầu được?", a: "Mình tự gội từ ngày 5, sau khi hết lịch chăm sóc ở phòng khám. Mấy lần đầu run tay lắm, cứ từ từ là được." },
     ],
   },
   {
@@ -260,7 +260,7 @@ export const posts: PostMeta[] = [
       "Ngày 17 tóc con vẫn mọc đều, mình mới thở phào.",
     ],
     faq: [
-      { q: "Bong vảy sau cấy tóc có bình thường không?", a: "Mình bị bong vảy nhiều khoảng ngày 12 đến 14, sau đó tóc con vẫn mọc đều. Thấy lo thì anh em hỏi ngay phòng khám nơi mình cấy." },
+      { q: "Bong vảy sau cấy tóc có bình thường không?", a: "Ngày 12 mình bong vảy nhiều, hoảng lắm, nhưng đến ngày 17 tóc con vẫn mọc đều. Giờ nhìn lại thì mình thấy lo nhiều quá, bớt soi gương là đỡ." },
     ],
   },
   {
@@ -275,10 +275,10 @@ export const posts: PostMeta[] = [
     tldr: [
       "Mới cấy chưa được đội mũ bảo hiểm, mình chuyển sang xe bus.",
       "Ngày 58 mình đã đội lại và quay video cách đội để bảo vệ vùng cấy.",
-      "Mốc chính xác mỗi người khác nhau, hỏi bác sĩ trước khi đội.",
+      "Đi bus gần hai tháng, rẻ mà mát, mình thấy chẳng thiệt gì.",
     ],
     faq: [
-      { q: "Sau cấy tóc bao lâu được đội mũ bảo hiểm?", a: "Ngày 11 mình vẫn chưa được đội nên đi xe bus. Đến ngày 58 thì mình đã đội lại. Mốc chính xác cho từng người anh em nên hỏi bác sĩ nơi mình cấy." },
+      { q: "Sau cấy tóc bao lâu được đội mũ bảo hiểm?", a: "Mình đội lại từ ngày 58, trước đó toàn đi xe bus. Xe bus 10 nghìn một chuyến, vừa rẻ vừa mát, chịu khó gần hai tháng là ổn." },
     ],
   },
   {
@@ -296,13 +296,13 @@ export const posts: PostMeta[] = [
       "Lúc rụng sốc có hôm chẳng dám ra đường, nhưng mình vẫn đi làm mỗi ngày.",
     ],
     faq: [
-      { q: "Cấy tóc xong có phải nghỉ làm không?", a: "Mình vẫn đi làm sau cấy, chỉ là chưa đội được mũ bảo hiểm nên phải đi xe bus. Nghỉ bao lâu cho hợp công việc thì anh em hỏi bác sĩ trước khi xếp lịch cấy." },
+      { q: "Cấy tóc xong có phải nghỉ làm không?", a: "Mình vẫn đi làm, sinh hoạt gần như bình thường, chỉ đổi xe máy sang xe bus. Ngày 22 ra đường chẳng ai biết mình mới cấy." },
     ],
   },
   {
     slug: "dung-minoxidil-sau-cay-toc",
     title: "Dùng minoxidil (mino) sau cấy tóc: mình bắt đầu từ ngày 29",
-    description: "Ngày 29 sau cấy, lúc tóc con rơi nhiều hơn, mình bắt đầu dùng mino dạng xịt. Kể thật lúc mới dùng và vì sao nên hỏi bác sĩ trước.",
+    description: "Ngày 29 sau cấy, lúc tóc con rơi nhiều hơn, mình bắt đầu dùng mino dạng xịt. Kể lại lúc mới dùng và tóc mình sau đó thế nào.",
     date: "2026-10-16",
     category: "Kinh nghiệm",
     tags: ["Mino", "Tháng đầu"],
@@ -311,10 +311,10 @@ export const posts: PostMeta[] = [
     tldr: [
       "Ngày 29 tóc con rơi nhiều hơn, mình bắt đầu dùng mino dạng xịt.",
       "Mình có quay video cách mình xịt để anh em tham khảo.",
-      "Mino là thuốc, dùng hay không phải hỏi bác sĩ.",
+      "Dùng mino rồi vẫn rụng sốc như thường, đừng nghĩ xịt vào là hết rụng.",
     ],
     faq: [
-      { q: "Sau cấy tóc có nên dùng minoxidil không?", a: "Mình dùng mino dạng xịt từ ngày 29. Mino là thuốc, nên dùng hay không, dùng loại nào anh em phải hỏi bác sĩ." },
+      { q: "Sau cấy tóc có nên dùng minoxidil không?", a: "Mình xịt mino từ ngày 29, lúc tóc con bắt đầu rơi nhiều. Dùng rồi vẫn rụng sốc như thường, nên anh em đừng nghĩ xịt vào là hết rụng." },
     ],
   },
   {
@@ -329,10 +329,10 @@ export const posts: PostMeta[] = [
     tldr: [
       "Ngày 55, giữa lúc rụng sốc, mình tiêm PRP lần 1 để hỗ trợ nang tóc.",
       "Ngày 85 mình mới thấy tóc con xuất hiện.",
-      "Có nên tiêm hay không tuỳ mỗi người, hỏi bác sĩ.",
+      "Mình không đo được PRP giúp bao nhiêu, chỉ biết tiêm xong vẫn phải chờ.",
     ],
     faq: [
-      { q: "Có cần tiêm PRP sau cấy tóc không?", a: "Mình tiêm PRP lần 1 vào ngày 55 để hỗ trợ nang tóc. Có nên tiêm hay không thì tuỳ tình trạng từng người, anh em nên hỏi bác sĩ." },
+      { q: "Có cần tiêm PRP sau cấy tóc không?", a: "Mình tiêm lần 1 vào ngày 55, đúng lúc rụng nhiều nhất. Mình không đo được nó giúp bao nhiêu, nhưng lúc đó làm thêm được gì cho tóc là mình làm." },
     ],
   },
   {
@@ -350,7 +350,7 @@ export const posts: PostMeta[] = [
       "Khoảng 25 ngày sau, ngày 85, tóc con bắt đầu xuất hiện.",
     ],
     faq: [
-      { q: "Sau cấy tóc 2 tháng trông thế nào?", a: "Với mình, ngày 60 nhìn còn thưa hơn cả trước khi cấy vì đang rụng sốc. Đến ngày 85 tóc con mới bắt đầu xuất hiện." },
+      { q: "Sau cấy tóc 2 tháng trông thế nào?", a: "Thảm lắm. Ngày 60 của mình nhìn còn thưa hơn cả trước khi cấy, nhưng 25 ngày sau tóc con đã bắt đầu lên." },
     ],
   },
   {
@@ -368,7 +368,7 @@ export const posts: PostMeta[] = [
       "Tin nhắn động viên của anh em giúp nhiều hơn mình nghĩ.",
     ],
     faq: [
-      { q: "Làm sao để bớt stress khi rụng sốc sau cấy tóc?", a: "Với mình là vẫn đi làm mỗi ngày, bớt soi gương, xem nhật ký của người khác và đọc tin nhắn động viên. Nếu lo về tóc thì hỏi bác sĩ nơi mình cấy." },
+      { q: "Làm sao để bớt stress khi rụng sốc sau cấy tóc?", a: "Với mình là cứ đi làm mỗi ngày cho đỡ soi gương, và đọc tin nhắn động viên của anh em. Một câu \"cười nhiều lên\" thôi mà giúp mình nhiều lắm." },
     ],
   },
   {
@@ -386,7 +386,7 @@ export const posts: PostMeta[] = [
       "Đang ở tháng 2, tháng 3 mà chưa thấy gì thì cứ bình tĩnh.",
     ],
     faq: [
-      { q: "Sau cấy tóc 3 tháng tóc mọc chưa?", a: "Với mình, ngày 85 mới thấy tóc con xuất hiện, ngày 90 mọc rõ hơn. Mỗi người nhanh chậm khác nhau." },
+      { q: "Sau cấy tóc 3 tháng tóc mọc chưa?", a: "Với mình là có, nhưng mới lún phún. Ngày 85 thấy tóc con, ngày 90 rõ hơn, có tí tóc thôi mà vui cả ngày." },
     ],
   },
   {
@@ -401,10 +401,10 @@ export const posts: PostMeta[] = [
     tldr: [
       "Ngày 95, tóc con vừa nhú, mình chơi thể thao cường độ cao trở lại.",
       "Sau gần 2 tháng rụng sốc, tâm trạng mình lên hẳn.",
-      "Bao lâu thì vận động mạnh được, anh em hỏi bác sĩ.",
+      "Có tí tóc trên đầu mà được chơi lại, tâm trạng nó đã lắm.",
     ],
     faq: [
-      { q: "Sau cấy tóc bao lâu thì chơi thể thao được?", a: "Mình chơi thể thao cường độ cao trở lại vào ngày 95. Mốc này của mình, còn với anh em thì phải hỏi bác sĩ nơi mình cấy." },
+      { q: "Sau cấy tóc bao lâu thì chơi thể thao được?", a: "Mình chơi thể thao cường độ cao lại từ ngày 95. Có tí tóc con trên đầu mà được chơi lại, tâm trạng nó đã lắm." },
     ],
   },
   {
@@ -422,7 +422,7 @@ export const posts: PostMeta[] = [
       "Mỗi người hợp một loại, cứ thử rồi tự cảm nhận.",
     ],
     faq: [
-      { q: "Sau cấy tóc nên dùng dầu gội gì?", a: "Tháng đầu mình gội theo hướng dẫn của phòng khám. Ngày 105 mình đổi sang loại khác, thấy đỡ bết và giảm rụng. Mỗi người hợp một loại, giai đoạn đầu thì nên hỏi phòng khám trước khi đổi." },
+      { q: "Sau cấy tóc nên dùng dầu gội gì?", a: "Tháng đầu mình dùng theo phòng khám, ngày 105 đổi sang loại khác thấy đỡ bết và giảm rụng. Tên sản phẩm mình để trong video ngày 105." },
     ],
   },
   {
@@ -440,7 +440,7 @@ export const posts: PostMeta[] = [
       "Mốc tiếp theo là tròn 6 tháng, ngày 27/10/2026.",
     ],
     faq: [
-      { q: "Sau cấy tóc 5 tháng trông thế nào?", a: "Với mình, ngày 155 tóc đã lên khá ổn, khác hẳn ảnh ngày 60. Mình vẫn đang chờ tóc dài và dày thêm." },
+      { q: "Sau cấy tóc 5 tháng trông thế nào?", a: "Ngày 155 mình thấy tóc đã lên khá ổn, vuốt tạo kiểu được rồi. So với ảnh ngày 60 thì khác hẳn." },
     ],
   },
   {
@@ -458,7 +458,7 @@ export const posts: PostMeta[] = [
       "Trang này gom hết lại để anh em tự xem và tự quyết.",
     ],
     faq: [
-      { q: "Xem review cấy tóc thật ở đâu?", a: "Mình quay nhật ký cấy tóc trên TikTok @nguyensonarsenal từ những ngày đầu, và gom ảnh, video từng mốc về trang này." },
+      { q: "Xem review cấy tóc thật ở đâu?", a: "Mình quay nhật ký trên TikTok @nguyensonarsenal từ những ngày đầu, hơn 106 video, cả lúc đẹp lẫn lúc thảm. Mình nghĩ phải xem trọn một hành trình mới biết trước mình sẽ đi qua những gì." },
     ],
   },
 ];

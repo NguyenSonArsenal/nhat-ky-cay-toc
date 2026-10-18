@@ -1,6 +1,8 @@
 // Thông tin chung của site. Ô nào để trống ("" hoặc null) sẽ hiện "Đang cập nhật".
 export const site = {
   name: "Nhật Ký Cấy Tóc",
+  // Domain chính thức của web (dùng cho sitemap.xml, robots.txt, ảnh share). Có domain thì sửa ở đây.
+  url: process.env.NEXT_PUBLIC_SITE_URL ?? "http://localhost:3000",
   // "light": nền trắng như quinndigio.com, nhấn đỏ; "red": nền hồng/trắng như cũ;
   // "mono": trắng đen; "dark": nền tối như tkdodo.eu
   theme: "light" as "light" | "red" | "mono" | "dark",
