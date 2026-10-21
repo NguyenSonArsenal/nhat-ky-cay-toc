@@ -94,7 +94,9 @@ export function SwiperGallery({
         navigation={slides.length > 1}
         pagination={{ type: "fraction" }} // hiển thị "1 / 5"
         autoplay={autoplay > 0 ? { delay: autoplay * 1000, disableOnInteraction: false } : false}
-        thumbs={{ swiper: thumbs && !thumbs.destroyed ? thumbs : null }}
+        // Next giữ trang cũ trong <Activity>: rời trang thì Swiper thumbs bị huỷ và xoá sạch thuộc tính
+        // (kể cả cờ destroyed), quay lại mà truyền "xác" đó vào là lỗi classList. Chỉ truyền khi còn el.
+        thumbs={{ swiper: thumbs?.el && !thumbs.destroyed ? thumbs : null }}
         onSwiper={(s) => (main.current = s)}
       >
         {slides.map((s, i) => (
@@ -130,6 +132,7 @@ export function SwiperGallery({
           className="sw-thumbs"
           modules={[FreeMode, Thumbs]}
           onSwiper={setThumbs}
+          onDestroy={() => setThumbs(null)}
           slidesPerView="auto"
           spaceBetween={8}
           freeMode
